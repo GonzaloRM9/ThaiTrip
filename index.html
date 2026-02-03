@@ -5,6 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>thai-web</title>
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        document.body.innerHTML += '<div style="color:red; background:white; padding:20px; border:2px solid red; position:fixed; top:0; left:0; z-index:99999;">' +
+          '<h3>Critical Error</h3>' +
+          '<p>' + message + '</p>' +
+          '<p>' + source + ':' + lineno + '</p>' +
+          '<pre>' + (error ? error.stack : 'No stack') + '</pre>' +
+          '</div>';
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>
