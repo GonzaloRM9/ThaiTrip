@@ -15,6 +15,8 @@ export function Accordion({ title, image, isOpen, onToggle, children }: Accordio
             <button
                 onClick={onToggle}
                 className="w-full relative h-[400px] md:h-[500px] cursor-pointer focus:outline-none overflow-hidden"
+                aria-expanded={isOpen}
+                aria-controls={`accordion-content-${title}`}
             >
                 {/* Image Background with Parallax-like scale */}
                 <div className="absolute inset-0 bg-black/30 group-hover/accordion:bg-black/20 transition-colors duration-700 z-10" />
@@ -42,7 +44,9 @@ export function Accordion({ title, image, isOpen, onToggle, children }: Accordio
             </button>
 
             <div
+                id={`accordion-content-${title}`}
                 className={`bg-sand transition-[max-height,opacity] duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden ${isOpen ? 'max-h-[3000px] opacity-100' : 'max-h-0 opacity-0'}`}
+                role="region"
             >
                 <div className="p-6 md:p-12">
                     {children}
