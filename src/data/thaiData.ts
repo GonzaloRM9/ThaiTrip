@@ -95,7 +95,7 @@ export const thailandData: CitySection[] = [
     {
         id: 'chiang-mai',
         name: 'Chiang Mai',
-        image: 'https://images.unsplash.com/photo-1598971861713-54ad167248b9?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1518684079-172e1c5969dc?auto=format&fit=crop&w=1800&q=80', // paisaje montañoso y templo de Chiang Mai
         items: [
             {
                 id: 'cm-food-1',
@@ -138,7 +138,7 @@ export const thailandData: CitySection[] = [
     {
         id: 'phuket',
         name: 'Phuket',
-        image: 'https://images.unsplash.com/photo-1589394815804-989b3b785d03?auto=format&fit=crop&q=80',
+        image: 'https://images.unsplash.com/photo-1526481280697-94e4a8ad6d20?auto=format&fit=crop&w=1800&q=80', // playa tropical en Phuket
         items: [
             {
                 id: 'phuket-food-1',
