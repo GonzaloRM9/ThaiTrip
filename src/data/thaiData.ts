@@ -96,12 +96,86 @@ export const thailandData: CitySection[] = [
         id: 'chiang-mai',
         name: 'Chiang Mai',
         image: 'https://images.unsplash.com/photo-1598971861713-54ad167248b9?auto=format&fit=crop&q=80',
-        items: []
+        items: [
+            {
+                id: 'cm-food-1',
+                title: 'Khao Soi Khun Yai',
+                description: 'Khao soi clásico con caldo cremoso y pollo tierno, favorito de locales.',
+                type: 'food',
+                category: 'Comida',
+                location: 'Old City',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=Khao+Soi+Khun+Yai+Chiang+Mai'
+            },
+            {
+                id: 'cm-food-2',
+                title: 'Huen Phen',
+                description: 'Cocina del norte auténtica con especialidades como Nam Prik y Sai Oua.',
+                type: 'food',
+                category: 'Comida',
+                location: 'Old City',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=Huen+Phen+Chiang+Mai'
+            },
+            {
+                id: 'cm-weed-1',
+                title: 'Cookies Chiang Mai',
+                description: 'Dispensario de la marca internacional Cookies, buen servicio y variedad de flores.',
+                type: 'shopping',
+                category: 'Dispensario',
+                location: 'Nimmanhaemin',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=Cookies+Chiang+Mai'
+            },
+            {
+                id: 'cm-weed-2',
+                title: '4:20 Chiang Mai',
+                description: 'Tienda accesible con productos CBD y opciones de cannabis medicinal legal.',
+                type: 'shopping',
+                category: 'Dispensario',
+                location: 'Old City',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=4%3A20+Chiang+Mai'
+            }
+        ]
     },
     {
         id: 'phuket',
         name: 'Phuket',
         image: 'https://images.unsplash.com/photo-1589394815804-989b3b785d03?auto=format&fit=crop&q=80',
-        items: []
+        items: [
+            {
+                id: 'phuket-food-1',
+                title: 'No.9 2nd Restaurant',
+                description: 'Comida tailandesa local muy popular, excelente pad thai y currys.',
+                type: 'food',
+                category: 'Comida',
+                location: 'Kata Beach',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=No.9+2nd+Restaurant+Phuket'
+            },
+            {
+                id: 'phuket-food-2',
+                title: 'Suay Restaurant',
+                description: 'Platos contemporáneos del sur de Tailandia en ambiente moderno.',
+                type: 'food',
+                category: 'Comida',
+                location: 'Rawai',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=Suay+Restaurant+Phuket'
+            },
+            {
+                id: 'phuket-weed-1',
+                title: 'Ivan Cannabis Clinic Phuket',
+                description: 'Dispensario y clínica cannábica con buenas reviews y asesoría profesional.',
+                type: 'shopping',
+                category: 'Dispensario',
+                location: 'Chalong',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=Ivan+Cannabis+Clinic+Phuket'
+            },
+            {
+                id: 'phuket-weed-2',
+                title: '420 Express Phuket',
+                description: 'Opción rápida en Patong con selección de flores y productos de CBD.',
+                type: 'shopping',
+                category: 'Dispensario',
+                location: 'Patong',
+                mapUrl: 'https://www.google.com/maps/search/?api=1&query=420+Express+Phuket'
+            }
+        ]
     }
 ];
